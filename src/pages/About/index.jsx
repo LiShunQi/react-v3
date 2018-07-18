@@ -2,6 +2,7 @@ import React from 'react'
 import { Router, Link } from "@reach/router"
 import ConectContainer from '../Conect'
 import { connect } from 'react-redux'
+import CountDown from 'components/CountDown'
 
 const About = (props) => {
     return (
@@ -15,6 +16,9 @@ const About = (props) => {
                 <Router>
                     <ConectContainer path="conect" />
                 </Router>
+            </div>
+            <div>
+                <CountDown />
             </div>
         </div>
     )
