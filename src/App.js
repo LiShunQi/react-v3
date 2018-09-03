@@ -5,7 +5,7 @@ import './App.css';
 import Home from './pages/Home'
 import AboutContainer from './pages/About'
 import store from './store'
-import setPath from './utils/path'
+import {setPath} from './utils/path'
 
 class App extends Component {
   render() {
