@@ -5,6 +5,7 @@ import './App.css';
 import Home from './pages/Home'
 import AboutContainer from './pages/About'
 import store from './store'
+import setPath from './utils/path'
 
 class App extends Component {
   render() {
@@ -12,12 +13,12 @@ class App extends Component {
       <Provider store={store}>
           <div className="App">
               <nav>
-                  <Link to="/">Home 6666</Link> |{" "}
-                  <Link to="/about/123">about</Link>
+                  <Link to={setPath('/')}>Home 6666</Link> |{" "}
+                  <Link to={setPath('/about/123')}>about</Link>
               </nav>
               <Router>
-                  <Home path="/" />
-                  <AboutContainer path="/about/:id/*" />
+                  <Home path={setPath('/')} />
+                  <AboutContainer path={setPath('/about/:id/*')} />
               </Router>
           </div>
       </Provider>
