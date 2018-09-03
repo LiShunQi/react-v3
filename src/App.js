@@ -12,7 +12,7 @@ class App extends Component {
       <Provider store={store}>
           <div className="App">
               <nav>
-                  <Link to="/">Home</Link> |{" "}
+                  <Link to="/">Home 6666</Link> |{" "}
                   <Link to="/about/123">about</Link>
               </nav>
               <Router>
